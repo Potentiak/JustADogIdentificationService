@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "ksw.potentiak.justadogidentificationservice"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures{
+        dataBinding = true
+        mlModelBinding true
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.10"
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.3.0'
+    implementation "androidx.activity:activity-ktx:1.5.0"
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.3.0'
+
+    // CameraX
+    implementation "androidx.camera:camera-camera2:1.0.0"
+    implementation "androidx.camera:camera-lifecycle:1.0.0"
+    implementation "androidx.camera:camera-view:1.0.0-alpha18"
+
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+}

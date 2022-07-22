@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Just a Dog Identification Service</string>
+    <string name="no_permission_text">No camera permission granted, exitting</string>
+    <string name="dog_identification_service">Dog Identification Service</string>
+</resources>
