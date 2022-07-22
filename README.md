@@ -17,14 +17,15 @@ For training the convolutional neural network I have used the [Stanford Dogs Dat
 
 ![all the breed on single image](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/augmentation_example.png)
 
-## Neural network model
+## Neural network model     
+### [lupus_omni_die.py]()
 
-For this project I have trained two different models (as during the project I have countless other models on this dataset)
+For the final project I have trained two different models (as during the project I have trained countless other models on this dataset to see their performance)
 
 - One using transfer learning
 - One using Classical CNN architecture
 
-The reason why transfer learning was necessary in final implementation is because of the sheer diversity and size of the dataset, training a reliable network which would have acceptable accuracy would require quote a complex architecture which would take an extremely long time on the hardware I have at my disposal.
+The reason why transfer learning was necessary in final implementation is because of the sheer diversity and size of the dataset, training a reliable network which would have acceptable accuracy would require quote a complex architecture which would take an extremely long time on the hardware I have at my disposal thus I have decided to use Densenet121 pretrained model as part of the final model which is used in the android APP.
 
 ### Network architecture(s)
 
@@ -49,7 +50,7 @@ Lastly the model is compiled using TFLite compiler into a .tflite file which the
 
 
 ## Android App Implementation
-
+### [JustADogIdentificationApp](https://github.com/Potentiak/JustADogIdentificationService/tree/main/JustADogIdentificationApp)
 The final part of the project is the android implementation which actively uses the trained and compiled model to classify a breed of dog currently in front of the device's camera.
 The app consists of one activity which implements CameraX for live image data which is displayed on preview and fed into the TFLite model which den return predictions which are displayed just below the preview window as a recycler view list.
 The app only diplays 10 most probable guesses.
