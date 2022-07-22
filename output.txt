@@ -1,0 +1,22 @@
+Model: "sequential_6"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ sequential_5 (Sequential)   (None, 224, 224, 3)       0         
+                                                                 
+ densenet201 (Functional)    (None, 7, 7, 1920)        18321984  
+                                                                 
+ global_average_pooling2d (G  (None, 1920)             0         
+ lobalAveragePooling2D)                                          
+                                                                 
+ dense (Dense)               (None, 4096)              7868416   
+                                                                 
+ dropout (Dropout)           (None, 4096)              0         
+                                                                 
+ dense_1 (Dense)             (None, 120)               491640    
+                                                                 
+=================================================================
+Total params: 26,682,040
+Trainable params: 8,360,056
+Non-trainable params: 18,321,984
+_________________________________________________________________
