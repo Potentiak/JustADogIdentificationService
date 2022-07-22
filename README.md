@@ -9,6 +9,7 @@ Here are some examples of the final project:
 | Some                                                                                                                   | static                                                                                                                 | screenshots                                                                                                             |
 |------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | ![architecture](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_example_static_1.jpg) | ![architecture](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_example_static_2.jpg) | ![architecture](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_example_static_3.jpg ) |
+
 ![architecture](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/TODO.png)
 ![architecture](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/TODO.png)
 
