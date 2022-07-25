@@ -1,5 +1,5 @@
 # Just a Dog Identification Service [JaDIS]
-![app logo](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/logo_with_title.jpg)
+![app logo](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/logo_with_title.png)
 
 ML + MobileApp = JaDIS
 
