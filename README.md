@@ -58,4 +58,6 @@ The final part of the project is the android implementation which actively uses 
 The app consists of one activity which implements CameraX for live image data which is displayed on preview and fed into the TFLite model which den return predictions which are displayed just below the preview window as a recycler view list.
 The app only diplays 10 most probable guesses.
 
-![app layout](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_live.jpg)
+| App                                                                                                              | Architecture                                                                                                     |
+|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| ![app l\ayout](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_live.jpg) | ![app l\ayout](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_live.jpg) |
