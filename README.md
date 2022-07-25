@@ -1,5 +1,9 @@
 # Just a Dog Identification Service [JaDIS]
+![app logo]()
+
 ML + MobileApp = JaDIS
+
+
 
 This repo contains an implementation of a tensorflow model which is then compiled into tensorflow lite model and finally used on an android application to identify dog breeds
 
