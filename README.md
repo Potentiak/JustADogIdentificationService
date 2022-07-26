@@ -20,7 +20,7 @@ Here are some examples of the final project:
 ## The dataset
 For training the convolutional neural network I have used the [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/) which contains around 20k images of 120 different dog breeds.
 
-![all the breed on single image](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/TODO.png)
+![all the breed on single image](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/all_the_breeds.png)
 
 ## Neural network model                 [lupus_omni_die.py]()
 
