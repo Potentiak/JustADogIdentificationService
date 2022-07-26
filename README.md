@@ -59,6 +59,7 @@ The app consists of one activity which implements CameraX for live image data wh
 The app only diplays 10 most probable guesses.
 
 <p float="center">
-  <img src=".../figures/app_layout_live.jpg" width="200" />
-  <img src=".../figures/app_layout_design.jpg" /> 
+  <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_live.jpg" width="200" />
+  <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_design.jpg" /> 
 </p>
+
