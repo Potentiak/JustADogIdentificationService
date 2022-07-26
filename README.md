@@ -60,7 +60,7 @@ The app only diplays 10 most probable guesses.
 
 #### app layout:
 <p float="middle">
-  <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_live.jpg" height="80" />
-  <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_design.jpg" height="80"/> 
+  <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_live.jpg" height="500" />
+  <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_design.jpg" height="500"/> 
 </p>
 
