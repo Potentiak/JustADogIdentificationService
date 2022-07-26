@@ -144,8 +144,8 @@ class MainActivity : AppCompatActivity() {
 
     private class ImageAnalyzer(ctx: Context, private val listener: CNNListener) :
         ImageAnalysis.Analyzer {
-        private val jdisModel: LupusOmniDie by lazy{
-            LupusOmniDie.newInstance(ctx)
+        private val jdisModel: LupusOmniDieMetadata by lazy{
+            LupusOmniDieMetadata.newInstance(ctx)
         }
         // Function handling model communications with the app
         override fun analyze(imageProxy: ImageProxy) {
