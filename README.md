@@ -29,7 +29,7 @@ For the final project I have trained two different models (as during the project
 - One using transfer learning
 - One using Classical CNN architecture
 
-The reason why transfer learning was necessary in final implementation is because of the sheer diversity and size of the dataset, training a reliable network which would have acceptable accuracy would require quote a complex architecture which would take an extremely long time on the hardware I have at my disposal thus I have decided to use Densenet121 pretrained model as part of the final model which is used in the android APP.
+The reason why transfer learning was necessary in final implementation is because of the sheer diversity and size of the dataset, training a reliable network which would have acceptable accuracy would require quote a complex architecture which would take an extremely long time on the hardware I have at my disposal thus I have decided to use Densenet121[[1]](https://keras.io/api/applications/densenet/)[[2]](https://arxiv.org/abs/1608.06993) pretrained model as part of the final model which is used in the android APP.
 
 ### Network architecture(s)
 
@@ -58,8 +58,9 @@ The final part of the project is the android implementation which actively uses 
 The app consists of one activity which implements CameraX for live image data which is displayed on preview and fed into the TFLite model which den return predictions which are displayed just below the preview window as a recycler view list.
 The app only diplays 10 most probable guesses.
 
+#### app layout:
 <p float="middle">
-  <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_live.jpg" width="200" />
-  <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_design.jpg" width="200"/> 
+  <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_live.jpg" height="80" />
+  <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_design.jpg" height="80"/> 
 </p>
 
