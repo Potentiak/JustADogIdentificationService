@@ -56,7 +56,8 @@ Lastly the model is compiled using TFLite compiler into a .tflite file which the
 ## Android App Implementation           [JustADogIdentificationApp](https://github.com/Potentiak/JustADogIdentificationService/tree/main/JustADogIdentificationApp)
 The final part of the project is the android implementation which actively uses the trained and compiled model to classify a breed of dog currently in front of the device's camera.
 The app consists of one activity which implements CameraX for live image data which is displayed on preview and fed into the TFLite model which den return predictions which are displayed just below the preview window as a recycler view list.
-The app only diplays 10 most probable guesses.
+The app only diplays 10 most probable guesses. As of writing this project there was no internal method for easy conversion of image from Yuv to RGB hence I have used a [method found on another repo](https://github.com/hoitab/TFLClassify/blob/main/finish/src/main/java/org/tensorflow/lite/examples/classification/util/YuvToRgbConverter.kt)
+as writing the app wasn't the main point of this project, only implementing a tensorflow trained model into an android app was.
 
 #### app layout:
 <p float="middle">
