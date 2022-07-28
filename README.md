@@ -55,6 +55,6 @@ as writing the app wasn't the main point of this project, only implementing a te
 
 ## Conclusion
 
-The following project demonstrated power of using pretrained NN for training a new model on dataset that is diversified and contains many classes. Transfer learning allowed to drastically shorten training time and allowed to achieve acceptable accuracy on validation data.
-It also shows a proof-of-concept of integrating machine learning models trained with tensorflow library into android application.
+The following project demonstrated power of using pretrained NN for training a new model on dataset that is diversified and contains many classes. Transfer learning allowed to drastically shorten training time and allowed to achieve acceptable accuracy on validation data without huge computational power requirements.
+The project also works as a proof-of-concept of integrating machine learning models trained with tensorflow library into android application.
 
