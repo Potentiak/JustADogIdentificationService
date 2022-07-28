@@ -26,7 +26,7 @@ import java.util.concurrent.Executors
 
 
 // Constants
-private const val MAX_RESULT_DISPLAY = 10 // Maximum number of prediction results displayed
+private const val MAX_RESULT_DISPLAY = 5 // Maximum number of prediction results displayed
 private const val REQUEST_CODE_PERMISSIONS = 621 // Return code after asking for permission
 private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA) // permission needed(s) fot the app to work
 private const val inputImageWidth = 224  // As described by tflite metadata
