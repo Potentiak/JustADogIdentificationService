@@ -22,7 +22,7 @@ For training the convolutional neural network I have used the [Stanford Dogs Dat
 
 ![all the breed on single image](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/all_the_breeds.png)
 
-## Neural network model                 [lupus_omni_die.py](https://github.com/Potentiak/JustADogIdentificationService/tree/main/lupus_omni_die.py)
+## Neural network model                 [lupus_omni_die.py](https://github.com/Potentiak/JustADogIdentificationService/tree/main/lupus-omni-die.py)
 
 For the final project I have only trained a model using transfer learning method. The reason why transfer learning was necessary in final implementation is because of the sheer diversity and size of the dataset, training a reliable network which would have acceptable accuracy would require quite a complex architecture which would take an extremely long time on the hardware I have at my disposal. The est accuracy I was able to achieve with standard models was near 30% mark and at that time training the network already took about 10 hours, at which point I have made the decision to try transfer learning which at the end was able to achieve 80% accuracy within only 4 hours of training*.
 
@@ -34,7 +34,6 @@ I have decided to use Densenet121[[1]](https://keras.io/api/applications/densene
 
 ### Training summary
 ![training with transfer learning](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/w_transfer_learning.png)
-![training without transfer learning](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/TODO.png)
 
 As we can see by the examples above the transfer learning model is able to achieve way more accurate results as it is more complex model while using relatively similar computation time as the classical CNN model.
 
