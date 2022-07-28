@@ -27,12 +27,12 @@ For the final project I have only trained a model using transfer learning method
 
 ### Network architecture(s)
 
-I have decided to use Densenet121[[1]](https://keras.io/api/applications/densenet/)[[2]](https://arxiv.org/abs/1608.06993) pretrained model on imagenet dataset as part of the final model which is used in the android APP. After densenet comes a densely connected layer of 4096 neurons with 50% dropout, at the end there is 120 softmax layer corresponding to every breed of the dataset
+I have decided to use Densenet201[[1]](https://keras.io/api/applications/densenet/)[[2]](https://arxiv.org/abs/1608.06993) pretrained model on imagenet dataset as part of the final model which is used in the android APP. After densenet comes a densely connected layer of 4096 neurons with 50% dropout, at the end there is 120 softmax layer corresponding to every breed of the dataset
 
 ### Training summary
 ![training with transfer learning](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/w_transfer_learning.png)
 
-As we can see by the examples above the transfer learning model is able to achieve way more accurate results as it is more complex model while using relatively similar computation time as the classical CNN model.
+As we can see by the examples above the transfer learning model was able to achieve about 80% accuracy after only 5 epochs and after them accuracy on the validation dataset did not increase substantially.
 
 ### TFLite model summary
 
@@ -40,10 +40,6 @@ Lastly the model is compiled using TFLite compiler into a .tflite file which the
 
 #### METADATA INFORMATION OF THE TFLITE MODEL
 ![TFLite metadata](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/metadata_information.JPG)
-
-### Conclusion
-
-The following project demonstrated power of using pretrained NN for training a new model on dataset that is diversified and contains many classes. Transfer learning allowed to drastically shorten training time and allowed to achieve acceptable accuracy on validation data. 
 
 ## Android App Implementation           [JustADogIdentificationApp](https://github.com/Potentiak/JustADogIdentificationService/tree/main/JustADogIdentificationApp)
 The final part of the project is the android implementation which actively uses the trained and compiled model to classify a breed of dog currently in front of the device's camera.
@@ -56,4 +52,9 @@ as writing the app wasn't the main point of this project, only implementing a te
   <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_live.jpg" height="500" />
   <img src="https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/app_layout_design.jpg" height="500"/> 
 </p>
+
+## Conclusion
+
+The following project demonstrated power of using pretrained NN for training a new model on dataset that is diversified and contains many classes. Transfer learning allowed to drastically shorten training time and allowed to achieve acceptable accuracy on validation data.
+It also shows a proof-of-concept of integrating machine learning models trained with tensorflow library into android application.
 
