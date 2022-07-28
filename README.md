@@ -26,7 +26,7 @@ For training the convolutional neural network I have used the [Stanford Dogs Dat
 
 For the final project I have only trained a model using transfer learning method. The reason why transfer learning was necessary in final implementation is because of the sheer diversity and size of the dataset, training a reliable network which would have acceptable accuracy would require quite a complex architecture which would take an extremely long time on the hardware I have at my disposal. The est accuracy I was able to achieve with standard models was near 30% mark and at that time training the network already took about 10 hours, at which point I have made the decision to try transfer learning which at the end was able to achieve 80% accuracy within only 4 hours of training*.
 
-[*] as you can see on the training chart I could have easily acheived similar acc. within about 1-hour training, but I kept it going to see whether my model would achieve better acc. on validation data
+[*] as you can see on the training chart I could have easily acheived similar acc. within 5 epoch (about 1-hour of training), but I kept it going to see whether my model would achieve better acc. on validation data which wasn't the case.
 
 ### Network architecture(s)
 
