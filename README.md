@@ -24,17 +24,13 @@ For training the convolutional neural network I have used the [Stanford Dogs Dat
 
 ## Neural network model                 [lupus_omni_die.py]()
 
-For the final project I have trained two different models (as during the project I have trained countless other models on this dataset to see their performance)
+For the final project I have only trained a model using transfer learning method. The reason why transfer learning was necessary in final implementation is because of the sheer diversity and size of the dataset, training a reliable network which would have acceptable accuracy would require quite a complex architecture which would take an extremely long time on the hardware I have at my disposal. The est accuracy I was able to achieve with standard models was near 30% mark and at that time training the network already took about 10 hours, at which point I have made the decision to try transfer learning which at the end was able to achieve 80% accuracy within only 4 hours of training*.
 
-- One using transfer learning
-- One using Classical CNN architecture
-
-The reason why transfer learning was necessary in final implementation is because of the sheer diversity and size of the dataset, training a reliable network which would have acceptable accuracy would require quote a complex architecture which would take an extremely long time on the hardware I have at my disposal thus I have decided to use Densenet121[[1]](https://keras.io/api/applications/densenet/)[[2]](https://arxiv.org/abs/1608.06993) pretrained model as part of the final model which is used in the android APP.
+[*] as you can see on the training chart I could have easily acheived similar acc. within about 1-hour training, but I kept it going to see whether my model would achieve better acc. on validation data
 
 ### Network architecture(s)
 
-![arch. with transfer learning](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/TODO)
-![architecture](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/TODO.png)
+I have decided to use Densenet121[[1]](https://keras.io/api/applications/densenet/)[[2]](https://arxiv.org/abs/1608.06993) pretrained model on imagenet dataset as part of the final model which is used in the android APP. After densenet comes a densely connected layer of 4096 neurons with 50% dropout, at the end there is 120 softmax layer corresponding to every breed of the dataset
 
 ### Training summary
 ![training with transfer learning](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/w_transfer_learning.png)
@@ -47,11 +43,11 @@ As we can see by the examples above the transfer learning model is able to achie
 Lastly the model is compiled using TFLite compiler into a .tflite file which then is easily accessed by android app. The trained model loses some accuracy due to compression but is still nonetheless accurate as seen in all the previews
 
 #### METADATA INFORMATION OF THE TFLITE MODEL
-![TFLite metadata](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/augmentation_example.png)
+![TFLite metadata](https://github.com/Potentiak/JustADogIdentificationService/blob/main/figures/metadata_information.JPG)
 
 ### Conclusion
 
-
+The following project demonstrated power of using pretrained NN for training a new model on dataset that is diversified and contains many classes. Transfer learning allowed to drastically shorten training time and allowed to achieve acceptable accuracy on validation data. 
 
 ## Android App Implementation           [JustADogIdentificationApp](https://github.com/Potentiak/JustADogIdentificationService/tree/main/JustADogIdentificationApp)
 The final part of the project is the android implementation which actively uses the trained and compiled model to classify a breed of dog currently in front of the device's camera.
